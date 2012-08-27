@@ -13,8 +13,8 @@
 		B12D512215EB9CA900A68EF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B12D512015EB9CA900A68EF7 /* InfoPlist.strings */; };
 		B12D512415EB9CA900A68EF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D512315EB9CA900A68EF7 /* main.m */; };
 		B12D512815EB9CA900A68EF7 /* EzSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D512715EB9CA900A68EF7 /* EzSampleAppDelegate.m */; };
-		B12D512B15EB9CA900A68EF7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12D512915EB9CA900A68EF7 /* MainStoryboard.storyboard */; };
-		B12D512E15EB9CA900A68EF7 /* EzSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D512D15EB9CA900A68EF7 /* EzSampleViewController.m */; };
+		B12D513615EB9D7100A68EF7 /* EzSampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12D513515EB9D7100A68EF7 /* EzSampleTableViewController.m */; };
+		B12D513815EB9DA500A68EF7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B12D513715EB9DA500A68EF7 /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +28,9 @@
 		B12D512515EB9CA900A68EF7 /* EzSample_iOS_TableViewAutoScroll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EzSample_iOS_TableViewAutoScroll-Prefix.pch"; sourceTree = "<group>"; };
 		B12D512615EB9CA900A68EF7 /* EzSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EzSampleAppDelegate.h; sourceTree = "<group>"; };
 		B12D512715EB9CA900A68EF7 /* EzSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EzSampleAppDelegate.m; sourceTree = "<group>"; };
-		B12D512A15EB9CA900A68EF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B12D512C15EB9CA900A68EF7 /* EzSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EzSampleViewController.h; sourceTree = "<group>"; };
-		B12D512D15EB9CA900A68EF7 /* EzSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EzSampleViewController.m; sourceTree = "<group>"; };
+		B12D513415EB9D7000A68EF7 /* EzSampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EzSampleTableViewController.h; sourceTree = "<group>"; };
+		B12D513515EB9D7100A68EF7 /* EzSampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EzSampleTableViewController.m; sourceTree = "<group>"; };
+		B12D513715EB9DA500A68EF7 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +79,10 @@
 			children = (
 				B12D512615EB9CA900A68EF7 /* EzSampleAppDelegate.h */,
 				B12D512715EB9CA900A68EF7 /* EzSampleAppDelegate.m */,
-				B12D512915EB9CA900A68EF7 /* MainStoryboard.storyboard */,
-				B12D512C15EB9CA900A68EF7 /* EzSampleViewController.h */,
-				B12D512D15EB9CA900A68EF7 /* EzSampleViewController.m */,
+				B12D513415EB9D7000A68EF7 /* EzSampleTableViewController.h */,
+				B12D513515EB9D7100A68EF7 /* EzSampleTableViewController.m */,
 				B12D511E15EB9CA900A68EF7 /* Supporting Files */,
+				B12D513715EB9DA500A68EF7 /* MainStoryboard.storyboard */,
 			);
 			path = EzSample_iOS_TableViewAutoScroll;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B12D512215EB9CA900A68EF7 /* InfoPlist.strings in Resources */,
-				B12D512B15EB9CA900A68EF7 /* MainStoryboard.storyboard in Resources */,
+				B12D513815EB9DA500A68EF7 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +164,7 @@
 			files = (
 				B12D512415EB9CA900A68EF7 /* main.m in Sources */,
 				B12D512815EB9CA900A68EF7 /* EzSampleAppDelegate.m in Sources */,
-				B12D512E15EB9CA900A68EF7 /* EzSampleViewController.m in Sources */,
+				B12D513615EB9D7100A68EF7 /* EzSampleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,14 +177,6 @@
 				B12D512115EB9CA900A68EF7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B12D512915EB9CA900A68EF7 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B12D512A15EB9CA900A68EF7 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
